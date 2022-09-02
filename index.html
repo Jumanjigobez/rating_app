@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Jumanji | Interactive rating component</title>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+
+   <main>
+
+  <!-- Rating state start -->
+    <div id="rating_card">
+      <div class="star_icon">
+        <img src="images/icon-star.svg" alt="star icon">
+      </div>
+
+      <div class="text_part">
+        <h1>How did we do?</h1>
+        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      </div>
+
+      <div class="rating_btn">
+        <ul>
+          <li><button onclick="active(1);">1</button></li>
+          <li><button onclick="active(2);">2</button></li>
+          <li><button onclick="active(3);">3</button></li>
+          <li><button onclick="active(4);">4</button></li>
+          <li><button onclick="active(5);">5</button></li>
+        </ul>
+      </div>
+
+      <div class="submit_btn" onclick="submit();">
+        <button>Submit</button>
+      </div>
+    </div>
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+   <div id="thanks_card" style="display: none;">
+      <div class="image">
+        <img src="images/illustration-thank-you.svg" alt="thank you illustration image">
+      </div>
+
+      <div class="result">
+        <p>You selected <span id="result"></span> out of 5</p>
+      </div>
+
+      <div class="text">
+        <h1>Thank you!</h1>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+      </div>
+    </div>
+  <!-- Thank you state end -->
+   
+   <div id="footer">
+     <div class="coder">
+      <small>Coded by <a href="https://www.jumnajigobez.github.io/personal_portfolio" target="_blank">Jumanji</a></small>
+    </div>
+   </div>
+
+  </main>
+  <script src="script/script.js"></script>
+</body>
+</html>
