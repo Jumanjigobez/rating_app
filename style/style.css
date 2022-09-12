@@ -156,7 +156,7 @@ small a:hover{
 	font-size: 14px;
 	color: var(--Light-Grey);
 }
-@media (max-width: 375px){
+@media (max-width: 600px){
 	body{
 
 		padding: 0rem 1rem;
